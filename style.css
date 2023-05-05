@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  font-size: 2em;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  width: 100%;
+}
+nav {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  width: 35%;
+  padding-top: 50px;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.menu{
+  display: none;
+}
+.design {
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  width: inherit;
+  padding: 50px;
+}
+
+.header {
+  grid-area: h;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.border {
+  border-bottom: 15px solid red;
+  width: 70px;
+  border-radius: 10%;
+}
+.header2 {
+  color: red;
+}
+
+.footer {
+  grid-area: f;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 2px solid #fff;
+}
+.gridcon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding-top: 20px;
+}
+.gridcon img {
+  max-width: 100%;
+}
+
+.gallery {
+  width: auto;
+  opacity: 0.7;
+}
+.gallery:hover {
+  opacity: 1;
+}
+.Typo1 {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.typo2 {
+  color: #000;
+  font-size: clamp(10px, 2.5vw, 1rem);
+}
+.designers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+
+}
+.pple {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  font-size: 20px;
+}
+input {
+  width: 90%;
+  min-width: 200px;
+  height: 50px;
+}
+button {
+  background-color: red;
+  color: #fff;
+  width: 90%;
+  min-width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  border: 2px solid red;
+  margin-bottom: 20px;
+}
+.footer {
+  color: #000;
+  padding: 20px 20px;
+  text-align: right;
+  bottom: 0;
+}
+@media screen and (min-width: 1400px) {
+  nav {
+    gap: 150px;
+  }
+  .navbar {
+    gap: 60px;
+  }
+ 
+}
+@media  screen and (max-width:1350px) {
+  .designers {
+    flex-wrap: wrap;
+  }
+  
+}
+@media screen and (max-width:550px) {
+  body {
+    flex-direction: column;
+  }
+  .header {
+    gap: 0;
+  }
+  main {
+    padding: 20px;
+  }
+  .design{
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  nav {
+    width: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+  }
+  .navbar {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  
+}
