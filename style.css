@@ -19,7 +19,7 @@ nav {
   flex-direction: column;
   gap: 100px;
   align-items: center;
-  width: 35%;
+  width: 45%;
   padding-top: 50px;
 }
 .navbar {
@@ -170,6 +170,9 @@ button {
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    gap: 0px;
+    padding-top: 20px;
+    padding-inline: 5px;
   }
   .navbar {
     display: none;
